@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GetIt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --primary: rgb(165, 105, 45);
+      --primary-dark: rgb(140, 85, 35);
+      --secondary: #2E2B41;
+      --light: #fff;
+      --light-bg: #F8F5F2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: var(--secondary);
+    }
+
+    header {
+      background: var(--light);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .logo i {
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      border: 2px solid var(--secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('pexels-steshkawillems-1661950.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: var(--light);
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 700px;
+    }
+
+    .auth-buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.7rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--light);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--light);
+      color: var(--light);
+    }
+
+    footer {
+      background: var(--secondary);
+      color: var(--light);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .footer-links {
+      margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--light);
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <i class="fas fa-shopping-bag"></i> GetIt
+    </a>
+    <nav>
+      <a href="#">Browse Products</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to GetIt</h1>
+    <p>Ever wanted to play any sport out of the blue but with no equipment? we got you,your dream game is just a click away!
+    <br>If you want it,you got it!</p>
+    <div class="auth-buttons">
+      <a href="register.php" class="btn btn-primary">Get Started</a>
+      <a href="login.php" class="btn btn-outline">I Already Have an Account</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <p>&copy; 2025 GetIt</p>
+  </footer>
+</body>
+</html>
